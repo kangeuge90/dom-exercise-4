@@ -20,11 +20,10 @@
         <![endif]-->
     <h1>DOM Exercise 4</h1>
     <form id='theForm'>
-        <label>How many?        <input name='coin' type='number' /></label>
-
+        <label>How many? <input name='coin' type='coinNumber' /></label>
         <br>
         <label>Which Coin?</label>
-        <select coin="coinType">
+        <select name='coin' type='coinValue'>
             <option value="penny">Penny</option>
             <option value="nickel">Nickel</option>
             <option value="dime">Dime</option>
@@ -33,7 +32,9 @@
         <br>
         <button id='moneyMaker'>Make Money!</button>
     </form>
+    <div id='coinHolder'>
 
+    </div>
     <script src="script.js" async defer></script>
 </body>
 
